@@ -18,7 +18,7 @@ export const profile = {
     twitter: "",
     leetcode: "https://leetcode.com/u/Kabilan_Jayabalan/",
   },
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/developer-kabilan/resume.pdf",
 }
 
 export const skills: { category: string; items: string[] }[] = [

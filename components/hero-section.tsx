@@ -97,7 +97,7 @@ export function HeroSection() {
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-brand/60 via-brand/20 to-transparent p-1 shadow-[0_0_30px_rgba(var(--brand),0.3)]">
             <div className="relative h-full w-full overflow-hidden rounded-full border-4 border-background bg-card">
               <Image
-                src="/Photo-bg.png"
+                src="/developer-kabilan/Photo-bg.png"
                 alt={profile.name}
                 fill
                 className="object-cover scale-110"
