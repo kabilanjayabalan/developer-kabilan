@@ -10,7 +10,7 @@ export function CertificationsSection() {
 
   const handleInProgressClick = (e: React.MouseEvent) => {
     e.preventDefault()
-    setToastMessage("This link is currently in progress!")
+    setToastMessage("Link in progress try again later")
     setTimeout(() => setToastMessage(null), 3000)
   }
 

@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     'Portfolio of Kabilan Jayabalan, an aspiring junior software engineer building efficient, real-world software solutions with Java, Spring Boot, and modern web technologies.',
   generator: 'v0.app',
   icons: {
-    icon: '/Photo_top.png',
-    apple: '/Photo_top.png',
+    icon: '/developer-kabilan/Photo_top.png',
+    apple: '/developer-kabilan/Photo_top.png',
   },
 }
 

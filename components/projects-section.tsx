@@ -11,7 +11,7 @@ export function ProjectsSection() {
 
   const handleInProgressClick = (e: React.MouseEvent) => {
     e.preventDefault()
-    setToastMessage("This project link is currently in progress!")
+    setToastMessage("Link in progress try again later")
     setTimeout(() => setToastMessage(null), 3000)
   }
 

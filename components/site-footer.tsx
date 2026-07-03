@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="mx-auto max-w-5xl px-6 py-10">
       <div className="flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} {profile.name}. Hi...
+          © {new Date().getFullYear()} {profile.name}. Thank you for visiting...
         </p>
         <div className="flex items-center gap-4">
           <a
