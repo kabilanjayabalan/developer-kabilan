@@ -1,6 +1,7 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { createPortal } from "react-dom"
 import { ArrowUpRight, Clock } from "lucide-react"
 import { GithubIcon } from "@/components/brand-icons"
 import { projects } from "@/lib/portfolio-data"
@@ -9,22 +10,29 @@ import { SectionHeading } from "@/components/section-heading"
 export function ProjectsSection() {
   const [toastMessage, setToastMessage] = useState<string | null>(null)
 
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   const handleInProgressClick = (e: React.MouseEvent) => {
     e.preventDefault()
-    setToastMessage("Link in progress try again later")
+    setToastMessage("Link Error Try again later")
     setTimeout(() => setToastMessage(null), 3000)
   }
 
   return (
     <section id="projects" className="mx-auto max-w-5xl scroll-mt-20 px-6 py-16 md:py-20 min-h-[100dvh] snap-start flex flex-col justify-center relative">
-      {toastMessage && (
-        <div className="fixed top-24 right-4 z-[9999] rounded-md bg-foreground text-background px-4 py-2 text-sm font-medium shadow-lg animate-page-transition">
+      {mounted && toastMessage && createPortal(
+        <div className="fixed top-4 right-4 z-[9999] rounded-md bg-foreground text-background px-4 py-2 text-sm font-medium shadow-lg animate-page-transition">
           {toastMessage}
-        </div>
+        </div>,
+        document.body
       )}
       <SectionHeading
         index="03"
-        title="Featured projects"
+        title="Featured Projects"
         subtitle="A selection of things I've designed, built, and shipped."
       />
       <div className="grid gap-6 md:grid-cols-2">
