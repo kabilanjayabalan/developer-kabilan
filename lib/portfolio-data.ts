@@ -50,7 +50,7 @@ export const projects: {
         "A legal aid platform with secure authentication, role-based access control, intelligent case matching, and real-time communication connecting citizens with verified pro bono lawyers and NGOs.",
       tags: ["Java", "Spring Boot", "Postgres SQL", "JWT/OAuth2"],
       repoUrl: "https://github.com/kabilanjayabalan/legal-aid-matching-assistant",
-      liveUrl: "#",
+      liveUrl: "https://legal-aid-matching-assistant.vercel.app/",
       year: "2025",
     },
     {
